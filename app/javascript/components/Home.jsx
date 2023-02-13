@@ -11,11 +11,11 @@ export default () => (
         </p>
         <hr className="my-4" />
         <Link
-          to="/appointments"
+          to="/physicians"
           className="btn btn-lg custom-button"
           role="button"
         >
-          View Appointments
+          View Physician's Appointments
         </Link>
       </div>
     </div>
