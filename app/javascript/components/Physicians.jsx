@@ -46,7 +46,7 @@ const Physicians = () => {
         <div className="container py-5">
           <h1 className="display-4 primary-color">Appointments by Physician</h1>
           <p className="lead text-muted secondary-color">
-            We’ve pulled together all the furballs and kittehs in our lives and shared them all here. 
+            Click on physician to see their appointments
           </p>
         </div>
       </section>
