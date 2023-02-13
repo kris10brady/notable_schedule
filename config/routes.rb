@@ -1,11 +1,10 @@
 Rails.application.routes.draw do
-  root 'physicians#index'
-
-  resources :physicians do
-    resources :appointments
+  namespace :api do
+    namespace :v1 do
+      get 'appointments/index'
+      get '/show/:id', to: 'appointments#show'
+    end
   end
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
-  # Defines the root path route ("/")
-  # root "articles#index"
+  root 'appointments#index'
+  get '/*path' => 'appointment#index'
 end
