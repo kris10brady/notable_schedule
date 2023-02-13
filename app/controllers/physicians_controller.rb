@@ -1,6 +1,8 @@
 class PhysiciansController < ApplicationController
   before_action :set_physician, only: %i[show]
-  def index; end
+  def index
+    @physicians = Physician.all
+  end
 
   def show
     @physician
