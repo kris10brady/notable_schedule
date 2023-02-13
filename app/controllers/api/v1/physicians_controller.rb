@@ -1,4 +1,4 @@
-class Api::V1::AppointmentsController < ApplicationController
+class Api::V1::PhysiciansController < ApplicationController
   before_action :set_physician, only: %i[show]
 
   def index
@@ -7,7 +7,7 @@ class Api::V1::AppointmentsController < ApplicationController
   end
 
   def show
-    render json: @physician, include: :appointments
+    render json: @physician, include: :physicians
   end
 
   private

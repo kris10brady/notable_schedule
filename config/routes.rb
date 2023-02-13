@@ -1,10 +1,10 @@
 Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
-      get 'appointments/index'
-      get '/show/:id', to: 'appointments#show'
+      get 'physicians/index'
+      get '/show/:id', to: 'physicians#show'
     end
   end
-  root 'appointments#index'
-  get '/*path' => 'appointment#index'
+  root 'homepage#index'
+  get '/*path' => 'homepage#index'
 end
