@@ -3,7 +3,7 @@ class CreateAppointments < ActiveRecord::Migration[7.0]
     create_table :appointments do |t|
       t.datetime :time, null: false
       t.string :kind, null: false, default: 'New Appointment'
-      t.references :physicians
+      t.references :physician
 
       t.timestamps
     end
