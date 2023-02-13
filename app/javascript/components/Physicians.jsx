@@ -24,12 +24,14 @@ const Physicians = () => {
         <div className="card-body bg_primary-color">
           <h5 className="card-title secondary-color ">{physician.last_name}</h5>
           <Link to={`/physician/${physician.id}`} className="btn custom-button">
-            {`${physician.last_name}, ${physician.first_name}`}
+          {`${physician.last_name}, ${physician.first_name}`}
           </Link>
         </div>
       </div>
     </div>
   ));
+
+
   const noPhysician = (
     <div className="vw-100 vh-50 d-flex align-items-center justify-content-center">
       <h4>
@@ -53,6 +55,7 @@ const Physicians = () => {
           <div className="row">
             {physicians.length > 0 ? allPhysicians : noPhysician}
           </div>
+
           <Link to="/" className="btn btn-link">
             Home
           </Link>

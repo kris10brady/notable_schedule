@@ -7,7 +7,7 @@ class Api::V1::PhysiciansController < ApplicationController
   end
 
   def show
-    render json: @physician, include: :physicians
+    render json: @physician, include: :appointments
   end
 
   private
